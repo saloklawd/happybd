@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+  <div id="kolch">
+<div align ="center" id ="mapa">
+  <h1>sma7seeeeeeeeeeen</h1>
+  <h2>lbss?? 👉👈</h2>
+ <div>
+    <p>let's play a game <img src="jigsaw.png" alt="booooooo" width="40" height="auto"> </p>
+    <p>U just gotta click on the button and see wut happens</p>
+    <p>don't be shy don't be shy go ahead</p>
+ </div>
+</div>
+<div align ="center" id="papa" >
+  <script> 
+ var N = 1;
+  </script>
+<button type="button" id="mama" onmouseover = "play()" onclick = "happybd()">
+  click on me if u dare
+ </button>
+
+
+</div>
+</div>
+
+<div align ="center" id="bdbb" hidden>
+  <img src="bd.png">
+</div>
+
+<script>
+   function play(){
+  if (N < 10) { 
+    const sizei = document.getElementById("papa").clientWidth;
+     const i = Math.floor(Math.random() * sizei);
+     const ii = Math.floor(Math.random() * sizei);
+  document.getElementById("mama").style.marginLeft = i-ii + 'px';
+    
+  const sizej = document.getElementById("mapa").clientHeight;
+  const j = Math.floor(Math.random() * sizej);
+     const jj = Math.floor(Math.random() * sizej);
+  document.getElementById("mama").style.marginTop = j-jj + 'px';
+  N = N + 1;
+}
+else { document.getElementById("mama").innerHTML = "jk don't cry u can click now";}
+   }
+   
+function happybd() {
+  
+  document.getElementById("kolch").remove();
+
+  document.getElementById("bdbb").style.display = "block";
+
+}
+</script>
+
+
+</body>
+
+
+</html>
